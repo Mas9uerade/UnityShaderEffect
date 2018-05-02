@@ -77,7 +77,7 @@
 	fixed4 frag(v2f IN) : SV_Target
 	{
 		fixed4 color = tex2D(_GrabTexture, IN.texcoord);
-	float gray = 1 - dot(color.rgb, float3(0.299, 0.587, 0.114));
+	float gray = dot(color.rgb, float3(0.299, 0.587, 0.114));
 	color.rgb = float3(gray, gray, gray);
 
 	return color;

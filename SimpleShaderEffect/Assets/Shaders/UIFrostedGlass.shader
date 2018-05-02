@@ -5,8 +5,8 @@ Shader "Custom/UIFrostedGlass"
 	Properties
 	{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
-	_NormalTex("Sprite Texture", 2D) = "white" {}
-	_StencilComp("Stencil Comparison", Float) = 8
+		_NormalTex("Sprite Texture", 2D) = "white" {}
+		_StencilComp("Stencil Comparison", Float) = 8
 		_Stencil("Stencil ID", Float) = 0
 		_StencilOp("Stencil Operation", Float) = 0
 		_StencilWriteMask("Stencil Write Mask", Float) = 255
@@ -75,14 +75,8 @@ Shader "Custom/UIFrostedGlass"
 	sampler2D _GrabTexture;
 	uniform half4 _GrabTexture_TexelSize;
 	sampler2D _NormalTex;
-	float _RandomParam;
-	static const half4 curve4[7] = { half4(0.0205,0.0205,0.0205,0),
-		half4(0.0855,0.0855,0.0855,0),
-		half4(0.232,0.232,0.232,0),
-		half4(0.324,0.324,0.324,1),
-		half4(0.232,0.232,0.232,0),
-		half4(0.0855,0.0855,0.0855,0),
-		half4(0.0205,0.0205,0.0205,0) };
+
+
 	fixed4 frag(v2f IN) : SV_Target
 	{
 		half4 nor = tex2D(_NormalTex, IN.texcoord * 4);	
