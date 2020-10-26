@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: dianji_E
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: c8b446c5639a94a4fbb8a9b437bc987b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.29803923, b: 0.5372549, a: 1}
+    - _Color: {r: 0, g: 0.17023538, b: 0.4117647, a: 0.78431374}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
